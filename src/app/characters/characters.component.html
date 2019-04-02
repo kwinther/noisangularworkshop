@@ -1,0 +1,17 @@
+<input [(ngModel)]="searchProperty" /> <button (click)="searchClicked()">SØK</button>
+<br>
+<br>
+<div class="row">
+  <div *ngFor="let character of characters" class="col-sm-6">
+    <div class="thumbnail">
+      <img src='{{character.image}}' alt="Generic placeholder thumbnail">
+    </div>
+    <div class="caption">
+      <h3>{{character.name}}</h3>
+      <a routerLink='/characters/{{character.id}}' class="btn btn-primary">
+        Mer info
+      </a>
+    </div>
+    <br>
+  </div>
+</div>

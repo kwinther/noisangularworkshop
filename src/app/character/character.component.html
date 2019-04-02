@@ -1,0 +1,16 @@
+<div class="row" *ngIf="character">
+  <div class="card text-center" [ngStyle]="setMyStyles()">
+    <div class="card-header">
+      {{character.name}}
+    </div>
+    <div class="card-body">
+      <div class="thumbnail">
+        <img src='{{character.image}}' alt="Generic placeholder thumbnail">
+      </div>
+      <h5 class="card-title">{{character.species}}</h5>
+      <p class="card-text">{{character.gender}}</p>
+      <a href="#" class="btn btn-primary">{{character.status}}</a>
+    </div>
+  </div>
+</div>
+
